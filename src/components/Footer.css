@@ -1,0 +1,136 @@
+.body{
+    font-family: Arial, sans-serif;
+    background-color: #d8c7bb;
+    color: #864e39;
+    margin: 0; padding: 0;
+    /*Removes any default margin and padding around the body to prevent unexpected spacing.*/
+    display: flex;
+    flex-direction: colums;
+    /*Stacks the child elements (header, footer, etc.) vertically*/
+    align-items: center;
+    /*Horizontally centers all child elements within body*/
+    justify-content: center;
+    /*Vertically centers the child elements within the body.*/
+    min-height: 100vh;
+    /*body takes up at least the full height of the viewport, so content is vertically centered.*/
+}
+
+.container{
+    background-color: #d8c7bb;
+
+  /*content will not strech on lsrge screen as max width is limited*/
+  /*take full space of parent*/
+  padding: 20px;
+  text-align: center;
+  /* to center text within container*/
+}
+
+.upperPart{
+    background-color: #d8c7bb;
+}
+
+.upparPart h1{
+    font-size: 2rem;
+  margin-bottom: 10px;
+}
+
+.formWaitList {
+    display: flex ;/* responsive*/
+    justify-content: center; /*vertically center*/
+    align-items: center; /*Horizontally centers*/
+    margin-bottom: 10px; 
+  
+}
+
+.formWaitList input {
+    padding: 10px; /*inside input field*/
+    border: 1px solid #864e39;
+    border-radius: 5px;
+    font-size: 1rem;
+    margin-right: 10px; /*distance from button*/
+  }
+
+  .formWaitList button {
+    padding: 10px 20px;
+     /*10 on top, 20 on bottom*/
+    background-color: #864e39;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+  }
+  
+  .formWaitList button:hover {
+    background-color: #7a4a3e;
+  }
+
+
+  .upperPart p{
+    margin-top: 10px;
+    color: #8d564a;
+  }
+
+  .footer {
+    margin-top: 50px;
+    background-color: #d8c7bb;
+    padding: 20px;
+  }
+
+  .middlePart {
+    display: flex;
+    justify-content: space-between;
+    /*Distributes the footer sections evenly across the footer, with space between each section*/
+    align-items: flex-start;
+    /* Aligns the footer sections at the top of the footer.*/
+    flex-wrap: wrap;
+  }
+
+  .divider {
+    border: 0;
+    height: 1px;
+    background-color: #c69b7b;
+    margin: 20px 0;
+  }
+
+  .dividertwo{
+    border: 0;
+    height: 1px;
+    background-color: #8d564a;
+    margin: 20px 0;
+  }
+  
+  .footer-partone{
+    margin: 10px;
+    text-align: left;
+  }
+
+  .brand-section .logo {
+    max-width: 150px;
+  }
+  
+  .footer-partone h4 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+  }
+
+  .footer-partone p {
+    margin: 2px 0;
+  }
+
+  .social-icons {
+    display: flex;
+    gap: 10px;
+  }
+
+  .social-icons i {
+    font-size: 1.2rem;
+    cursor: pointer;
+  }
+
+  .bottomPart {
+    margin-top: 20px;
+    text-align: center;
+  }
+
+  

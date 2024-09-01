@@ -1,0 +1,255 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+
+.header{
+    display : flex;
+    justify-content : space-between ;
+    align-items: center;
+    padding-top : 0px;
+    padding-bottom : 0px;
+    padding-left : 10px;
+    padding-right : 10px;
+    background-color: #d8c7bb;
+}
+
+header img{
+    height : 60px;
+    width: 120px;
+    margin-left : 20px;
+    margin-top: 35px; margin-bottom: 35px;
+}
+
+nav {
+    display : flex;
+    gap : 30px;
+    margin-right: 20px;
+}
+
+nav a {
+    color: #864e39; 
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 18px;
+    transition: color 0.3s ease;
+  }
+
+nav a:hover {
+    color: #533329; 
+}
+
+.imbalance-section {
+    background-image: url('../assets/bgimage.jpeg'); 
+    background-size: cover;
+    background-position: center;
+    height: 600px; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    color: white;
+}
+
+.imbalance-text {
+    font-size: 18px; 
+    font-weight: bold;
+    color: rgb(255, 255, 255); 
+    border-radius: 10px;
+}
+
+.calm-level-test {
+    background-color: #d8c7bb;
+    text-align: center;
+    padding: 50px 20px 50px 20px;
+    font-family: Arial, sans-serif;
+    color: #864e39; 
+}
+
+.calm-lvl{
+    background-color: #d8c7bb;
+    text-align: right;
+    padding: 10px 10px;
+    font-family: Arial, sans-serif;
+    color: #864e39; 
+}
+
+.calm-level-test h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.calm-level-test .description {
+    font-size: 18px;
+    margin-top: 30px;
+    margin-bottom: 40px;
+    line-height: 1.6;
+}
+
+.calm-level-test .unwind-btn {
+    background-color: #8B4F35;
+    color: #fff;
+    padding: 15px 30px;
+    border: none;
+    font-size: 18px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.calm-level-test .unwind-btn:hover {
+    background-color: #6F3A26;
+}
+
+.calm-level-test .footer-note {
+    font-size: 14px;
+    margin-top: 30px;
+    color: #7E5C50;
+    font-style: italic;
+}
+
+.chakra-container {
+    background-color: #864e39;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+.side-text{
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;  
+}
+
+.chakra-title {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 20px;
+
+}
+
+.chakra-text {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.chakra-link {
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+
+.revolving-chakras-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #864e39;
+    padding: 50px;
+}
+
+.side-section {
+    width: 25%;
+    background-color: #864e39;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.side-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.side-text {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+
+
+.revolving-chakras-container {
+    margin-top: 180px;
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.rotation-wrapper {
+    position: relative;
+    width: 350px; /* Size of the circle */
+    height: 350px;
+}
+
+.chakra-circle {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.anima {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.ci{
+    z-index: 1;
+}
+
+.central-image {
+    position: absolute;
+    width: 140px; /* Size of the central image */
+    height: 120px;
+    top: 10%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%);
+    z-index: 1;
+
+}
+
+.chakra-image-wrapper {
+    display: inline-block;
+    position: absolute;
+    width: 80px; /* Adjust width as necessary */
+    height: 80px; /* Adjust height as necessary */
+    /* Ensure zoomed image doesn't overflow */
+    z-index: 10;
+}
+
+.chakra-image {
+    width: 100%;
+    height: 100%;
+    transition: transform 0.3s ease;
+    transform-origin: center center;
+    overflow: hidden;
+    animation: orbit 10s infinite linear;
+    z-index : 10;
+}
+
+/* Chakra hover effect */
+.chakra-image-wrapper:hover .chakra-image {
+    transform: scale(2);
+    z-index: 10;
+    animation: orbit;
+}
+
+.chakra1 { transform: rotate(0deg) translateX(150px); animation-delay: 0s; }
+.chakra2 { transform: rotate(51.43deg) translateX(150px); animation-delay: -1.43s; }
+.chakra3 { transform: rotate(102.86deg) translateX(150px); animation-delay: -2.86s; }
+.chakra4 { transform: rotate(154.29deg) translateX(150px); animation-delay: -4.29s; }
+.chakra5 { transform: rotate(205.71deg) translateX(150px); animation-delay: -5.71s; }
+.chakra6 { transform: rotate(257.14deg) translateX(150px); animation-delay: -7.14s; }
+.chakra7 { transform: rotate(308.57deg) translateX(150px); animation-delay: -8.57s; }
+
+@keyframes orbit {
+    0% { transform: rotate(0deg) translateX(150px); }
+    100% { transform: rotate(360deg) translateX(150px); }
+}
